@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Shopping List</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="grocerylist.js"></script>
+	<link rel="stylesheet" type="text/css" href="list.css">
+</head>
+<body>
+	<h1>Shopping List</h1>
+	<form action="add" method="get">
+		<label>Add Item: </label> 
+		<input type="text" name="item" id = "txt">
+	</form>
+	<button type = "button" id = "addNeed" onclick="need()">Need </button>
+	<button type = "button" id = "addHave" onclick= have()> Have</button>
+	<h2> Need: </h2>
+		<ul class='list' id="list">
+			
+		</ul>	
+	<h2> Have: </h2>
+		<ul class='list' id = "list1">
+
+		</ul>
+	
+</body>
+</html>
+
